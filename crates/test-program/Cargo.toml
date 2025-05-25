@@ -1,0 +1,24 @@
+[package]
+name = "test-program"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+default = ["custom-heap", "custom-panic"]
+custom-heap = []
+custom-panic = []
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "jaguar_cu"
+
+[dependencies]
+jaguar = { workspace = true }
+borsh = { version = "1.5.1", features = ["derive"] }
+pinocchio = "0.7.1"
+pinocchio-log = "0.4.0"
+
+[dev-dependencies]
+solana-program-test = "2.1.4"
+solana-sdk = "2.1.4"
+tokio = { version = "1.37.0", features = ["rt", "macros"] }

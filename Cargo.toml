@@ -1,0 +1,8 @@
+[workspace]
+members = ["crates/core", "crates/derive", "crates/test-program"]
+resolver = "2"
+
+[workspace.dependencies]
+jaguar = { path = "./crates/core" }
+jaguar-derive = { path = "./crates/derive" }
+test-program = { path = "./crates/test-program" }

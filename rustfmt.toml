@@ -1,0 +1,6 @@
+edition = "2021"
+order_imports = true
+wrap_comments = true
+comment_width = 80
+
+imports_granularity = "One"

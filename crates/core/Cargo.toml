@@ -1,0 +1,36 @@
+[package]
+name = "jaguar"
+version = "1.0.0"
+edition = "2021"
+description = "A high-performance, compact binary serialization library"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+keywords = ["serialization", "binary"]
+categories = ["encoding"]
+
+[features]
+default = ["derive"]
+std = []
+solana = []
+derive = []
+
+[dependencies]
+jaguar-derive = { workspace = true }
+
+[dev-dependencies]
+criterion = "=0.3.6"
+
+[[bench]]
+name = "ser"
+harness = false
+
+[[bench]]
+name = "deser"
+harness = false
+
+[[bench]]
+name = "struct"
+harness = false
+
+[package.metadata.docs.rs]
+features = []
