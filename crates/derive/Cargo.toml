@@ -3,6 +3,7 @@ name = "jaguar-derive"
 version = "1.0.0"
 edition = "2021"
 description = "Derive macros for Jaguar serialization"
+repository = "https://github.com/joeymeere/jaguar"
 license = "MIT"
 
 [lib]
