@@ -14,7 +14,7 @@ Or add to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-jaguar = "0.1.0"
+jaguar = "1.0.0"
 ```
 
 ## Usage
