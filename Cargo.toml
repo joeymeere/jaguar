@@ -1,6 +1,7 @@
 [workspace]
 members = ["crates/core", "crates/derive", "crates/test-program"]
 resolver = "2"
+readme = "README.md"
 
 [workspace.dependencies]
 jaguar = { path = "./crates/core" }
